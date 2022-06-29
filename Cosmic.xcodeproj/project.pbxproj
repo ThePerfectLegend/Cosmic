@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A806ED04286C5B8E001C35F8 /* APODImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED03286C5B8E001C35F8 /* APODImageService.swift */; };
+		A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED06286C6944001C35F8 /* NetworkingManager.swift */; };
+		A888C56F2854CB71005D7C06 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888C56E2854CB71005D7C06 /* TempView.swift */; };
+		A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */; };
+		A8A4F4CF286AF8AC00928817 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4CE286AF8AC00928817 /* test.swift */; };
 		A8A898452850B7CF008F0658 /* CosmicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898442850B7CF008F0658 /* CosmicApp.swift */; };
-		A8A898472850B7CF008F0658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898462850B7CF008F0658 /* ContentView.swift */; };
+		A8A898472850B7CF008F0658 /* CosmicHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898462850B7CF008F0658 /* CosmicHomeView.swift */; };
 		A8A898492850B7D1008F0658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A898482850B7D1008F0658 /* Assets.xcassets */; };
 		A8A8984C2850B7D1008F0658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8984B2850B7D1008F0658 /* Preview Assets.xcassets */; };
+		A8A898532850B8C7008F0658 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898522850B8C7008F0658 /* Astronomy.swift */; };
+		A8A898572850BD43008F0658 /* AstronomyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898562850BD43008F0658 /* AstronomyViewModel.swift */; };
+		A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */; };
+		A8A8985F2850C0E3008F0658 /* AstronomyInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A806ED03286C5B8E001C35F8 /* APODImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODImageService.swift; sourceTree = "<group>"; };
+		A806ED06286C6944001C35F8 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		A888C56E2854CB71005D7C06 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDataSevrice.swift; sourceTree = "<group>"; };
+		A8A4F4CE286AF8AC00928817 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A8A898412850B7CF008F0658 /* Cosmic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A898442850B7CF008F0658 /* CosmicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicApp.swift; sourceTree = "<group>"; };
-		A8A898462850B7CF008F0658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8A898462850B7CF008F0658 /* CosmicHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicHomeView.swift; sourceTree = "<group>"; };
 		A8A898482850B7D1008F0658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8A8984B2850B7D1008F0658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8A898522850B8C7008F0658 /* Astronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
+		A8A898562850BD43008F0658 /* AstronomyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewModel.swift; sourceTree = "<group>"; };
+		A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyFeedCard.swift; sourceTree = "<group>"; };
+		A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A806ED05286C5BAD001C35F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */,
+				A806ED03286C5B8E001C35F8 /* APODImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A806ED08286C694D001C35F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A806ED06286C6944001C35F8 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A8A898382850B7CF008F0658 = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +87,14 @@
 			isa = PBXGroup;
 			children = (
 				A8A898442850B7CF008F0658 /* CosmicApp.swift */,
-				A8A898462850B7CF008F0658 /* ContentView.swift */,
+				A806ED08286C694D001C35F8 /* Utilities */,
+				A806ED05286C5BAD001C35F8 /* Services */,
+				A8A898542850B8D6008F0658 /* Model */,
+				A8A8985A2850BD66008F0658 /* ViewModel */,
+				A8A898552850BCB7008F0658 /* View */,
 				A8A898482850B7D1008F0658 /* Assets.xcassets */,
 				A8A8984A2850B7D1008F0658 /* Preview Content */,
+				A888C56E2854CB71005D7C06 /* TempView.swift */,
 			);
 			path = Cosmic;
 			sourceTree = "<group>";
@@ -65,6 +105,41 @@
 				A8A8984B2850B7D1008F0658 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8A898542850B8D6008F0658 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8A898522850B8C7008F0658 /* Astronomy.swift */,
+				A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8A898552850BCB7008F0658 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8A898462850B7CF008F0658 /* CosmicHomeView.swift */,
+				A8A8985D2850BE22008F0658 /* Feed */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8A8985A2850BD66008F0658 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8A898562850BD43008F0658 /* AstronomyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8A8985D2850BE22008F0658 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */,
+				A8A4F4CE286AF8AC00928817 /* test.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +212,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A898472850B7CF008F0658 /* ContentView.swift in Sources */,
+				A8A8985F2850C0E3008F0658 /* AstronomyInstance.swift in Sources */,
+				A888C56F2854CB71005D7C06 /* TempView.swift in Sources */,
+				A8A898472850B7CF008F0658 /* CosmicHomeView.swift in Sources */,
+				A806ED04286C5B8E001C35F8 /* APODImageService.swift in Sources */,
+				A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */,
+				A8A4F4CF286AF8AC00928817 /* test.swift in Sources */,
+				A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */,
+				A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */,
+				A8A898532850B8C7008F0658 /* Astronomy.swift in Sources */,
+				A8A898572850BD43008F0658 /* AstronomyViewModel.swift in Sources */,
 				A8A898452850B7CF008F0658 /* CosmicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
