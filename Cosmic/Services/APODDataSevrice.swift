@@ -8,31 +8,36 @@
 import Foundation
 
 class APODDataSevrice {
-    
-    let apiKey = "7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn"
-    let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn")!
-    
-    
-    func fetchOneAPODData() async throws -> Astronomy  {
         
-        // Request
-        let (data, responce) = try await URLSession.shared.data(from: url)
+    func fetchTodayAPODData() async throws -> Astronomy  {
         
-        // Data
-        guard let outputResponce = responce as? HTTPURLResponse,
-              outputResponce.statusCode >= 200 && outputResponce.statusCode < 300 else {
-                  throw URLError(.badServerResponse)
-              }
+        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn")!
         
-        // Decoding
-        guard let astronomy = try? JSONDecoder().decode(Astronomy.self, from: data) else {
+        guard let todayAPODData = try? await NetworkManager.download(url: url) else {
+            throw URLError(.badServerResponse)
+        }
+        
+        guard let astronomy = try? JSONDecoder().decode(Astronomy.self, from: todayAPODData) else {
             throw URLError(.cannotCreateFile)
         }
-
-        // Instance
+        
         return astronomy
+        
     }
     
-    // Fetch Array of APOD Data
-    
+    func fetchArrayofAPODData() async throws -> [Astronomy] {
+        
+        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=50")!
+        
+        guard let arrayAPODData = try? await NetworkManager.download(url: url) else {
+            throw URLError(.badServerResponse)
+        }
+        
+        guard let astronomy = try? JSONDecoder().decode([Astronomy].self, from: arrayAPODData) else {
+            throw URLError(.cannotCreateFile)
+        }
+        
+        return astronomy
+    }
+
 }

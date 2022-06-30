@@ -13,22 +13,25 @@ struct AstronomyFeedCard: View {
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            Image(astronomy.photoURL!)
-                .resizable()
-                .aspectRatio(1, contentMode: .fit)
-            VStack(alignment: .leading) {
-                Text(astronomy.title!)
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                Text("Copywrite: \(astronomy.copyright!)")
-                    .font(.callout)
+            AsyncImage(url: URL(string: astronomy.photoURL!)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(1, contentMode: .fill)
+            } placeholder: {
+                ProgressView()
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.vertical, 4)
-            .padding(.horizontal, 8)
-            .background(.ultraThinMaterial)
+            HStack {
+                Text(astronomy.title!)
+                Spacer()
+            }
+            .padding()
+            .background(.thinMaterial)
         }
-        .mask(RoundedRectangle(cornerRadius: 4, style: .continuous))
-        .padding(.horizontal, 12)
+        .background(.thinMaterial)
+        .mask(RoundedRectangle(cornerRadius: 16))
+        .padding(.bottom, 8)
     }
 }
+
+
+//Text("Copywrite: \(astronomy.copyright!)")

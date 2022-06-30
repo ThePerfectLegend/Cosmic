@@ -11,16 +11,17 @@ struct CosmicHomeView: View {
     
     @StateObject var astronomyViewModel = AstronomyViewModel()
     
-    
-    
-    
     var body: some View {
-        List {
-            ForEach(astronomyViewModel.astronomies) { POTD in
-                Text(POTD.title ?? "")
+        NavigationView {
+            List {
+                ForEach(astronomyViewModel.astronomies) { POTD in
+                    AstronomyFeedCard(astronomy: POTD)
+                        .listRowSeparator(.hidden)
+                }
             }
+            .navigationTitle("Cosmic")
+            .listStyle(.plain)
         }
-        
     }
 }
 

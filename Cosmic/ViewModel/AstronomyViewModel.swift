@@ -15,7 +15,8 @@ import Foundation
     
     init() {
         Task {
-            try? await self.astronomies.append(networkManager.fetchOneAPODData())
+//            try? await self.astronomies.append(networkManager.fetchTodayAPODData())
+            try? await self.astronomies = networkManager.fetchArrayofAPODData()
         }
     }
 }
