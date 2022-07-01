@@ -18,10 +18,10 @@ import Foundation
 
 struct Astronomy: Identifiable, Codable {
     let id = UUID().uuidString
-    let date: String?
-    let title: String?
-    let description: String?
-    let photoURL: String?
+    let date: String
+    let title: String
+    let description: String
+    let photoURL: String
     var isLiked: Bool = false
     let copyright: String?
     

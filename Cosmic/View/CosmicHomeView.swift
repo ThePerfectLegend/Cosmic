@@ -21,7 +21,11 @@ struct CosmicHomeView: View {
             }
             .navigationTitle("Cosmic")
             .listStyle(.plain)
+            .refreshable {
+                await astronomyViewModel.loadAPODs()
+            }
         }
+        .environmentObject(astronomyViewModel)
     }
 }
 

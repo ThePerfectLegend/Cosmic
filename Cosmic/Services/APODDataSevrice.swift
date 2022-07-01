@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class APODDataSevrice {
         
@@ -27,7 +28,7 @@ class APODDataSevrice {
     
     func fetchArrayofAPODData() async throws -> [Astronomy] {
         
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=50")!
+        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=15")!
         
         guard let arrayAPODData = try? await NetworkManager.download(url: url) else {
             throw URLError(.badServerResponse)
@@ -40,4 +41,17 @@ class APODDataSevrice {
         return astronomy
     }
 
+    func downloadImage(url: URL) async throws -> UIImage {
+        
+        guard let imageData = try? await NetworkManager.download(url: url) else {
+            throw URLError(.badServerResponse)
+        }
+        
+        guard let image = UIImage(data: imageData) else {
+            throw URLError(.cannotCreateFile)
+        }
+        
+        return image
+
+    }
 }

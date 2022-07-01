@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct AstronomyFeedCard: View {
-    
+        
     let astronomy: Astronomy
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            AsyncImage(url: URL(string: astronomy.photoURL!)) { image in
+            AsyncImage(url: URL(string: astronomy.photoURL)) { image in
                 image
                     .resizable()
                     .aspectRatio(1, contentMode: .fill)
@@ -21,7 +21,7 @@ struct AstronomyFeedCard: View {
                 ProgressView()
             }
             HStack {
-                Text(astronomy.title!)
+                Text(astronomy.title)
                 Spacer()
             }
             .padding()
@@ -32,6 +32,3 @@ struct AstronomyFeedCard: View {
         .padding(.bottom, 8)
     }
 }
-
-
-//Text("Copywrite: \(astronomy.copyright!)")

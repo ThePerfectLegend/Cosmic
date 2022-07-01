@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A806ED04286C5B8E001C35F8 /* APODImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED03286C5B8E001C35F8 /* APODImageService.swift */; };
 		A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED06286C6944001C35F8 /* NetworkingManager.swift */; };
 		A888C56F2854CB71005D7C06 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888C56E2854CB71005D7C06 /* TempView.swift */; };
 		A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */; };
@@ -19,10 +18,10 @@
 		A8A898572850BD43008F0658 /* AstronomyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898562850BD43008F0658 /* AstronomyViewModel.swift */; };
 		A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */; };
 		A8A8985F2850C0E3008F0658 /* AstronomyInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */; };
+		A8C5D4E6286EF34500A44B30 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5D4E5286EF34500A44B30 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A806ED03286C5B8E001C35F8 /* APODImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODImageService.swift; sourceTree = "<group>"; };
 		A806ED06286C6944001C35F8 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		A888C56E2854CB71005D7C06 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDataSevrice.swift; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		A8A898562850BD43008F0658 /* AstronomyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewModel.swift; sourceTree = "<group>"; };
 		A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyFeedCard.swift; sourceTree = "<group>"; };
 		A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyInstance.swift; sourceTree = "<group>"; };
+		A8C5D4E5286EF34500A44B30 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */,
-				A806ED03286C5B8E001C35F8 /* APODImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -90,6 +89,7 @@
 				A8A898542850B8D6008F0658 /* Model */,
 				A8A8985A2850BD66008F0658 /* ViewModel */,
 				A8A898552850BCB7008F0658 /* View */,
+				A8C5D4E7286EF50300A44B30 /* Extensions */,
 				A8A898482850B7D1008F0658 /* Assets.xcassets */,
 				A8A8984A2850B7D1008F0658 /* Preview Content */,
 				A888C56E2854CB71005D7C06 /* TempView.swift */,
@@ -137,6 +137,14 @@
 				A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		A8C5D4E7286EF50300A44B30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8C5D4E5286EF34500A44B30 /* UIImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A8985F2850C0E3008F0658 /* AstronomyInstance.swift in Sources */,
+				A8C5D4E6286EF34500A44B30 /* UIImage.swift in Sources */,
 				A888C56F2854CB71005D7C06 /* TempView.swift in Sources */,
 				A8A898472850B7CF008F0658 /* CosmicHomeView.swift in Sources */,
-				A806ED04286C5B8E001C35F8 /* APODImageService.swift in Sources */,
 				A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */,
 				A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */,
 				A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */,

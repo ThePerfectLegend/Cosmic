@@ -10,13 +10,16 @@ import Foundation
 @MainActor class AstronomyViewModel: ObservableObject {
     
     @Published var astronomies = [Astronomy]()
-        
-    private let networkManager = APODDataSevrice()
+    
+    let networkManager = APODDataSevrice()
     
     init() {
         Task {
-//            try? await self.astronomies.append(networkManager.fetchTodayAPODData())
-            try? await self.astronomies = networkManager.fetchArrayofAPODData()
+           await loadAPODs()
         }
+    }
+    
+    func loadAPODs() async {
+        try? await self.astronomies = networkManager.fetchArrayofAPODData()
     }
 }
