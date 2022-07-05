@@ -11,7 +11,7 @@ import Foundation
     
     @Published var astronomies = [Astronomy]()
     
-    let networkManager = APODDataSevrice()
+    private let networkManager = APODDataSevrice()
     
     init() {
         Task {

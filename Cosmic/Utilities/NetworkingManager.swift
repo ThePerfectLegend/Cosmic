@@ -8,7 +8,7 @@
 import Foundation
 
 class NetworkManager {
-    
+        
     static func download(url: URL) async throws -> Data {
         
         let (data, responce) = try await URLSession.shared.data(from: url)
@@ -24,10 +24,3 @@ class NetworkManager {
     }
 }
 
-//let apiKey = "7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn"
-//let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn")!
-
-// Decoding
-//guard let astronomy = try? JSONDecoder().decode(Astronomy.self, from: data) else {
-//    throw URLError(.cannotCreateFile)
-//}

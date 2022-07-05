@@ -9,26 +9,10 @@ import Foundation
 import SwiftUI
 
 class APODDataSevrice {
-        
-    func fetchTodayAPODData() async throws -> Astronomy  {
-        
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn")!
-        
-        guard let todayAPODData = try? await NetworkManager.download(url: url) else {
-            throw URLError(.badServerResponse)
-        }
-        
-        guard let astronomy = try? JSONDecoder().decode(Astronomy.self, from: todayAPODData) else {
-            throw URLError(.cannotCreateFile)
-        }
-        
-        return astronomy
-        
-    }
     
     func fetchArrayofAPODData() async throws -> [Astronomy] {
         
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=15")!
+        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=25")!
         
         guard let arrayAPODData = try? await NetworkManager.download(url: url) else {
             throw URLError(.badServerResponse)
@@ -41,13 +25,19 @@ class APODDataSevrice {
         return astronomy
     }
 
-    func downloadImage(url: URL) async throws -> UIImage {
+    func downloadImage(url: String) async throws -> UIImage {
         
-        guard let imageData = try? await NetworkManager.download(url: url) else {
+        guard let urlFromString = URL(string: url) else {
+            throw URLError(.badURL)
+        }
+        
+        guard let imageData = try? await NetworkManager.download(url: urlFromString) else {
             throw URLError(.badServerResponse)
         }
         
-        guard let image = UIImage(data: imageData) else {
+        let maybeImage = UIImage(data: imageData)
+        
+        guard let image = await maybeImage?.thumbnail else {
             throw URLError(.cannotCreateFile)
         }
         
