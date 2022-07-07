@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-extension UIImage {
-    var thumbnail: UIImage? {
-        get async {
-            return await self.byPreparingForDisplay()
-        }
-    }
-}
+//extension UIImage {
+//    var thumbnail: UIImage? {
+//        get async {
+//            return await self.byPreparingForDisplay()
+//        }
+//    }
+//}

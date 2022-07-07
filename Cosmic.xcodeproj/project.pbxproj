@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED06286C6944001C35F8 /* NetworkingManager.swift */; };
+		A85ADDEF2876E9B3005C3C8E /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85ADDEE2876E9B3005C3C8E /* CacheAsyncImage.swift */; };
 		A888C56F2854CB71005D7C06 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888C56E2854CB71005D7C06 /* TempView.swift */; };
 		A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */; };
 		A8A898452850B7CF008F0658 /* CosmicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898442850B7CF008F0658 /* CosmicApp.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		A806ED06286C6944001C35F8 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		A85ADDEE2876E9B3005C3C8E /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
 		A888C56E2854CB71005D7C06 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDataSevrice.swift; sourceTree = "<group>"; };
 		A8A898412850B7CF008F0658 /* Cosmic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,7 @@
 		A806ED08286C694D001C35F8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A85ADDEE2876E9B3005C3C8E /* CacheAsyncImage.swift */,
 				A806ED06286C6944001C35F8 /* NetworkingManager.swift */,
 			);
 			path = Utilities;
@@ -223,6 +226,7 @@
 				A8A898472850B7CF008F0658 /* CosmicHomeView.swift in Sources */,
 				A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */,
 				A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */,
+				A85ADDEF2876E9B3005C3C8E /* CacheAsyncImage.swift in Sources */,
 				A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */,
 				A8A898532850B8C7008F0658 /* Astronomy.swift in Sources */,
 				A8A898572850BD43008F0658 /* AstronomyViewModel.swift in Sources */,

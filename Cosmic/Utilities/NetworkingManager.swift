@@ -7,9 +7,14 @@
 
 import Foundation
 
+// May be actor?
 class NetworkManager {
+    
+    static let instance = NetworkManager()
+    
+    private init() { }
         
-    static func download(url: URL) async throws -> Data {
+    func download(url: URL) async throws -> Data {
         
         let (data, responce) = try await URLSession.shared.data(from: url)
         
@@ -20,7 +25,6 @@ class NetworkManager {
         }
         
         return data
-        
     }
 }
 

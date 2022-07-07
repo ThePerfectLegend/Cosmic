@@ -8,27 +8,43 @@
 import SwiftUI
 
 struct AstronomyFeedCard: View {
-        
+    
     let astronomy: Astronomy
     
     var body: some View {
-        ZStack(alignment: .bottomLeading) {
-            AsyncImage(url: URL(string: astronomy.photoURL)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(1, contentMode: .fill)
-            } placeholder: {
-                ProgressView()
+        if let url = URL(string: astronomy.photoURL) {
+            ZStack(alignment: .bottomLeading) {
+                CacheAsyncImage(url: url) { phase in
+                    switch phase {
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .aspectRatio(1, contentMode: .fill)
+                    case .empty:
+                        ZStack {
+                            Color.clear
+                            ProgressView()
+                        }
+                        .aspectRatio(1, contentMode: .fill)
+                    case .failure:
+                        VStack {
+                            Image(systemName: "x.circle.fill")
+                                .foregroundColor(.red)
+                            Text("Oops something goes wrong")
+                        }
+                        .aspectRatio(1, contentMode: .fill)
+                    }
+                }
+                HStack {
+                    Text(astronomy.title)
+                    Spacer()
+                }
+                .padding()
+                .background(.thinMaterial)
             }
-            HStack {
-                Text(astronomy.title)
-                Spacer()
-            }
-            .padding()
             .background(.thinMaterial)
+            .mask(RoundedRectangle(cornerRadius: 16))
+            .padding(.bottom, 8)
         }
-        .background(.thinMaterial)
-        .mask(RoundedRectangle(cornerRadius: 16))
-        .padding(.bottom, 8)
     }
 }

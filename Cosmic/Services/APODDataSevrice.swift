@@ -12,9 +12,9 @@ class APODDataSevrice {
     
     func fetchArrayofAPODData() async throws -> [Astronomy] {
         
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=25")!
+        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=10")!
         
-        guard let arrayAPODData = try? await NetworkManager.download(url: url) else {
+        guard let arrayAPODData = try? await NetworkManager.instance.download(url: url) else {
             throw URLError(.badServerResponse)
         }
         
@@ -31,17 +31,14 @@ class APODDataSevrice {
             throw URLError(.badURL)
         }
         
-        guard let imageData = try? await NetworkManager.download(url: urlFromString) else {
+        guard let imageData = try? await NetworkManager.instance.download(url: urlFromString) else {
             throw URLError(.badServerResponse)
         }
         
-        let maybeImage = UIImage(data: imageData)
-        
-        guard let image = await maybeImage?.thumbnail else {
+        guard let image = UIImage(data: imageData) else {
             throw URLError(.cannotCreateFile)
         }
         
         return image
-
     }
 }
