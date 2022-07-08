@@ -28,8 +28,15 @@ struct AstronomyFeedCard: View {
                         .aspectRatio(1, contentMode: .fill)
                     case .failure:
                         VStack {
-                            Image(systemName: "x.circle.fill")
+                            Image(systemName: "xmark.circle")
                                 .foregroundColor(.red)
+                            Text("Can't load image")
+                        }
+                        .aspectRatio(1, contentMode: .fill)
+                    @unknown default:
+                        VStack {
+                            Image(systemName: "exclamationmark.triangle")
+                                .foregroundColor(.yellow)
                             Text("Oops something goes wrong")
                         }
                         .aspectRatio(1, contentMode: .fill)
