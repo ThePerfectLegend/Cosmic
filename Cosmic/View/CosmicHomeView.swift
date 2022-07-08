@@ -14,9 +14,14 @@ struct CosmicHomeView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(astronomyViewModel.astronomies) { POTD in
-                    AstronomyFeedCard(astronomy: POTD)
+                ForEach(astronomyViewModel.astronomies) { APOD in
+                    AstronomyFeedCard(astronomy: APOD)
                         .listRowSeparator(.hidden)
+                        .task {
+                            if APOD == astronomyViewModel.astronomies.last {
+                                await astronomyViewModel.loadMoreAPODs()
+                            }
+                        }
                 }
             }
             .navigationTitle("Cosmic")

@@ -22,4 +22,12 @@ import Foundation
     func loadAPODs() async {
         try? await self.astronomies = networkManager.fetchArrayofAPODData()
     }
+    
+    func loadMoreAPODs() async {
+        do {
+            self.astronomies += try await networkManager.fetchArrayofAPODData()
+        } catch {
+            print("Error in loading more APODs")
+        }
+    }
 }

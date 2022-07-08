@@ -16,7 +16,7 @@ import Foundation
 //}
 
 
-struct Astronomy: Identifiable, Codable {
+struct Astronomy: Identifiable, Codable, Equatable {
     let id = UUID().uuidString
     let date: String
     let title: String
