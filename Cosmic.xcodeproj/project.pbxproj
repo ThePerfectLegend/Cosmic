@@ -10,35 +10,35 @@
 		A803D89A28781EA4000878EA /* AstronomyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D89928781EA4000878EA /* AstronomyDetailView.swift */; };
 		A803D89E2878442E000878EA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D89D2878442E000878EA /* String.swift */; };
 		A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED06286C6944001C35F8 /* NetworkingManager.swift */; };
+		A835FFA628796E0B008529B0 /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA528796E0B008529B0 /* PhotoModelCacheManager.swift */; };
+		A835FFA828797511008529B0 /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA728797511008529B0 /* ImageLoadingViewModel.swift */; };
+		A835FFAA2879779B008529B0 /* AstronomyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA92879779B008529B0 /* AstronomyRowView.swift */; };
+		A835FFAF287978EE008529B0 /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFAE287978EE008529B0 /* DownloadingImageView.swift */; };
 		A85ADDEF2876E9B3005C3C8E /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85ADDEE2876E9B3005C3C8E /* CacheAsyncImage.swift */; };
-		A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */; };
 		A8A898452850B7CF008F0658 /* CosmicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898442850B7CF008F0658 /* CosmicApp.swift */; };
-		A8A898472850B7CF008F0658 /* CosmicHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898462850B7CF008F0658 /* CosmicHomeView.swift */; };
+		A8A898472850B7CF008F0658 /* AstronomyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898462850B7CF008F0658 /* AstronomyListView.swift */; };
 		A8A898492850B7D1008F0658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A898482850B7D1008F0658 /* Assets.xcassets */; };
 		A8A8984C2850B7D1008F0658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A8984B2850B7D1008F0658 /* Preview Assets.xcassets */; };
 		A8A898532850B8C7008F0658 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898522850B8C7008F0658 /* Astronomy.swift */; };
 		A8A898572850BD43008F0658 /* AstronomyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898562850BD43008F0658 /* AstronomyViewModel.swift */; };
-		A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */; };
-		A8A8985F2850C0E3008F0658 /* AstronomyInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */; };
-		A8C5D4E6286EF34500A44B30 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5D4E5286EF34500A44B30 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A803D89928781EA4000878EA /* AstronomyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyDetailView.swift; sourceTree = "<group>"; };
 		A803D89D2878442E000878EA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A806ED06286C6944001C35F8 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		A835FFA528796E0B008529B0 /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
+		A835FFA728797511008529B0 /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
+		A835FFA92879779B008529B0 /* AstronomyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyRowView.swift; sourceTree = "<group>"; };
+		A835FFAE287978EE008529B0 /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
 		A85ADDEE2876E9B3005C3C8E /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
-		A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDataSevrice.swift; sourceTree = "<group>"; };
 		A8A898412850B7CF008F0658 /* Cosmic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A898442850B7CF008F0658 /* CosmicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicApp.swift; sourceTree = "<group>"; };
-		A8A898462850B7CF008F0658 /* CosmicHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicHomeView.swift; sourceTree = "<group>"; };
+		A8A898462850B7CF008F0658 /* AstronomyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyListView.swift; sourceTree = "<group>"; };
 		A8A898482850B7D1008F0658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8A8984B2850B7D1008F0658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8A898522850B8C7008F0658 /* Astronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
 		A8A898562850BD43008F0658 /* AstronomyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewModel.swift; sourceTree = "<group>"; };
-		A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyFeedCard.swift; sourceTree = "<group>"; };
-		A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyInstance.swift; sourceTree = "<group>"; };
-		A8C5D4E5286EF34500A44B30 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +52,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A806ED05286C5BAD001C35F8 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A8A4F4CC286AE4AC00928817 /* APODDataSevrice.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		A806ED08286C694D001C35F8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				A85ADDEE2876E9B3005C3C8E /* CacheAsyncImage.swift */,
 				A806ED06286C6944001C35F8 /* NetworkingManager.swift */,
+				A835FFA528796E0B008529B0 /* PhotoModelCacheManager.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A835FFAB28797817008529B0 /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8A898462850B7CF008F0658 /* AstronomyListView.swift */,
+				A803D89928781EA4000878EA /* AstronomyDetailView.swift */,
+				A835FFA92879779B008529B0 /* AstronomyRowView.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
+		A835FFAC28797843008529B0 /* GridScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GridScreen;
+			sourceTree = "<group>";
+		};
+		A835FFAD28797851008529B0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A835FFAE287978EE008529B0 /* DownloadingImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A8A898382850B7CF008F0658 = {
@@ -90,7 +108,6 @@
 			children = (
 				A8A898442850B7CF008F0658 /* CosmicApp.swift */,
 				A806ED08286C694D001C35F8 /* Utilities */,
-				A806ED05286C5BAD001C35F8 /* Services */,
 				A8A898542850B8D6008F0658 /* Model */,
 				A8A8985A2850BD66008F0658 /* ViewModel */,
 				A8A898552850BCB7008F0658 /* View */,
@@ -113,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				A8A898522850B8C7008F0658 /* Astronomy.swift */,
-				A8A8985E2850C0E3008F0658 /* AstronomyInstance.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,8 +137,9 @@
 		A8A898552850BCB7008F0658 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A8A898462850B7CF008F0658 /* CosmicHomeView.swift */,
-				A8A8985D2850BE22008F0658 /* Feed */,
+				A835FFAC28797843008529B0 /* GridScreen */,
+				A835FFAB28797817008529B0 /* ListScreen */,
+				A835FFAD28797851008529B0 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,23 +148,14 @@
 			isa = PBXGroup;
 			children = (
 				A8A898562850BD43008F0658 /* AstronomyViewModel.swift */,
+				A835FFA728797511008529B0 /* ImageLoadingViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A8A8985D2850BE22008F0658 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				A8A8985B2850BE1C008F0658 /* AstronomyFeedCard.swift */,
-				A803D89928781EA4000878EA /* AstronomyDetailView.swift */,
-			);
-			path = Feed;
 			sourceTree = "<group>";
 		};
 		A8C5D4E7286EF50300A44B30 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A8C5D4E5286EF34500A44B30 /* UIImage.swift */,
 				A803D89D2878442E000878EA /* String.swift */,
 			);
 			path = Extensions;
@@ -223,17 +231,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A8985F2850C0E3008F0658 /* AstronomyInstance.swift in Sources */,
-				A8C5D4E6286EF34500A44B30 /* UIImage.swift in Sources */,
-				A8A898472850B7CF008F0658 /* CosmicHomeView.swift in Sources */,
-				A8A8985C2850BE1C008F0658 /* AstronomyFeedCard.swift in Sources */,
-				A8A4F4CD286AE4AC00928817 /* APODDataSevrice.swift in Sources */,
+				A8A898472850B7CF008F0658 /* AstronomyListView.swift in Sources */,
+				A835FFAF287978EE008529B0 /* DownloadingImageView.swift in Sources */,
+				A835FFA628796E0B008529B0 /* PhotoModelCacheManager.swift in Sources */,
+				A835FFA828797511008529B0 /* ImageLoadingViewModel.swift in Sources */,
 				A803D89A28781EA4000878EA /* AstronomyDetailView.swift in Sources */,
 				A803D89E2878442E000878EA /* String.swift in Sources */,
 				A85ADDEF2876E9B3005C3C8E /* CacheAsyncImage.swift in Sources */,
 				A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */,
 				A8A898532850B8C7008F0658 /* Astronomy.swift in Sources */,
 				A8A898572850BD43008F0658 /* AstronomyViewModel.swift in Sources */,
+				A835FFAA2879779B008529B0 /* AstronomyRowView.swift in Sources */,
 				A8A898452850B7CF008F0658 /* CosmicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

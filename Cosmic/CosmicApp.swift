@@ -11,7 +11,7 @@ import SwiftUI
 struct CosmicApp: App {
     var body: some Scene {
         WindowGroup {
-            CosmicHomeView()
+            AstronomyListView()
         }
     }
 }

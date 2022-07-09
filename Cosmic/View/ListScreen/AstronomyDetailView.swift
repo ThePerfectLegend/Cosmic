@@ -13,19 +13,22 @@ struct AstronomyDetailView: View {
     @State private var showFullDesc = false
     
     var body: some View {
-        ScrollView(.vertical) {
-            VStack {
-                Image("image")
-                    .resizable()
-                    .aspectRatio(1, contentMode: .fill)
-                VStack(spacing: 8) {
-                    title
-                    copyright
-                    date
-                    description
+        ZStack(alignment: .top) {
+            ScrollView(.vertical) {
+                VStack {
+                    DownloadingImageView(url: astronomy.photoURL)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
+                        .aspectRatio(1, contentMode: .fit)
+                    VStack(spacing: 8) {
+                        title
+                        copyright
+                        date
+                        description
+                    }
+                    .padding(.horizontal, 8)
                 }
-                .padding(.horizontal, 12)
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -34,7 +37,7 @@ extension AstronomyDetailView {
     
     private var title: some View {
         Text(astronomy.title)
-            .font(.title3)
+            .font(.title2)
             .bold()
             .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -45,8 +48,6 @@ extension AstronomyDetailView {
                 Text("Copyrights: \(unwrappedCopyright)")
                     .font(.headline)
                     .frame(maxWidth: .infinity, alignment: .leading)
-            } else {
-                EmptyView()
             }
         }
     }

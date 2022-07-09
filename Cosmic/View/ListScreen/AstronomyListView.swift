@@ -7,24 +7,23 @@
 
 import SwiftUI
 
-struct CosmicHomeView: View {
+struct AstronomyListView: View {
     
     @StateObject var astronomyViewModel = AstronomyViewModel()
     @State private var showDetailView = false
-    @State private var selectedAPOD: Astronomy?
+    @State private var selectedAstronomy: Astronomy?
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(astronomyViewModel.astronomies) { APOD in
-                    AstronomyFeedCard(astronomy: APOD)
+                ForEach(astronomyViewModel.astronomies) { astronomy in
+                    AstronomyRowView(astronomy: astronomy)
                         .onTapGesture {
-                            segue(astronomy: APOD)
+                            segue(astronomy: astronomy)
                         }
-                        .listRowSeparator(.hidden)
                         .task {
-                            if APOD == astronomyViewModel.astronomies.last {
-                                await astronomyViewModel.loadMoreAPODs()
+                            if astronomy == astronomyViewModel.astronomies.last {
+                                await astronomyViewModel.loadAdditionalAstronomyData()
                             }
                         }
                 }
@@ -32,12 +31,12 @@ struct CosmicHomeView: View {
             .navigationTitle("Cosmic")
             .listStyle(.plain)
             .refreshable {
-                await astronomyViewModel.loadAPODs()
+                await astronomyViewModel.loadNewAstronomyData()
             }
             .background(
                 NavigationLink(isActive: $showDetailView, destination: {
-                    if let unwrappedAPOD = selectedAPOD {
-                        AstronomyDetailView(astronomy: unwrappedAPOD)
+                    if let unwrappedAstronomy = selectedAstronomy {
+                        AstronomyDetailView(astronomy: unwrappedAstronomy)
                     }
                 }, label: {
                     EmptyView()
@@ -48,7 +47,7 @@ struct CosmicHomeView: View {
     }
     
     private func segue(astronomy: Astronomy) {
-        selectedAPOD = astronomy
+        selectedAstronomy = astronomy
         showDetailView.toggle()
     }
 }
