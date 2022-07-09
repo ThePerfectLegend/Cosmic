@@ -22,7 +22,7 @@ struct Astronomy: Identifiable, Codable, Equatable {
     let title: String
     let description: String
     let photoURL: String
-    var isLiked: Bool = false
+    var isFavorite: Bool = false
     let copyright: String?
     
     enum CodingKeys: String, CodingKey {

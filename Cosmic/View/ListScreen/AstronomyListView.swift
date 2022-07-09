@@ -51,4 +51,3 @@ struct AstronomyListView: View {
         showDetailView.toggle()
     }
 }
-
