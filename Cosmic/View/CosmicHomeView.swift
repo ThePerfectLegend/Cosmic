@@ -9,15 +9,6 @@ import SwiftUI
 
 struct CosmicHomeView: View {
     var body: some View {
-        TabView {
-            AstronomyListView()
-                .tabItem {
-                    Label("Cosmic", systemImage: "list.star")
-                }
-            AstronomyGridView()
-                .tabItem {
-                    Label("Saved", systemImage: "bookmark.fill")
-                }
-        }
+        AstronomyListView()
     }
 }

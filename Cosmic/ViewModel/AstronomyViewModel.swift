@@ -28,17 +28,13 @@ import Foundation
     }
     
     private func loadAstronomyData(number: Int) async throws -> [Astronomy] {
-        
         let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=7mXoJVkuaq26GJAcX1q7QN6whrQC59LeXbUlkKCn&count=\(number)")!
-        
         guard let astronomyData = try? await networkManager.download(url: url) else {
             throw URLError(.badServerResponse)
         }
-        
         guard let astronomy = try? JSONDecoder().decode([Astronomy].self, from: astronomyData) else {
             throw URLError(.cannotCreateFile)
         }
-        
         return astronomy
     }
 }

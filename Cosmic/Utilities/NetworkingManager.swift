@@ -7,7 +7,6 @@
 
 import Foundation
 
-// May be actor?
 class NetworkManager {
     
     static let instance = NetworkManager()
@@ -15,15 +14,12 @@ class NetworkManager {
     private init() { }
         
     func download(url: URL) async throws -> Data {
-        
         let (data, responce) = try await URLSession.shared.data(from: url)
-        
         guard let outputResponce = responce as? HTTPURLResponse,
               outputResponce.statusCode >= 200 && outputResponce.statusCode < 300
         else {
             throw URLError(.badServerResponse)
         }
-        
         return data
     }
 }

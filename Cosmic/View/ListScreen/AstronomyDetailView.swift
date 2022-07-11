@@ -63,7 +63,7 @@ extension AstronomyDetailView {
     private var description: some View {
         ZStack {
             VStack(alignment: .leading) {
-                Text(astronomy.description.removingHTMLOccurrences)
+                Text(astronomy.explanation.removingHTMLOccurrences)
                     .lineLimit(showFullDesc ? nil : 3)
                     .font(.body)
                     .animation(showFullDesc ? Animation.easeInOut : .none, value: showFullDesc)
@@ -80,5 +80,4 @@ extension AstronomyDetailView {
             .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
-    
 }

@@ -10,12 +10,11 @@
 		A803D89A28781EA4000878EA /* AstronomyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D89928781EA4000878EA /* AstronomyDetailView.swift */; };
 		A803D89E2878442E000878EA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D89D2878442E000878EA /* String.swift */; };
 		A806ED07286C6944001C35F8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806ED06286C6944001C35F8 /* NetworkingManager.swift */; };
-		A835FFA628796E0B008529B0 /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA528796E0B008529B0 /* PhotoModelCacheManager.swift */; };
+		A835FFA628796E0B008529B0 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA528796E0B008529B0 /* ImageCacheManager.swift */; };
 		A835FFA828797511008529B0 /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA728797511008529B0 /* ImageLoadingViewModel.swift */; };
 		A835FFAA2879779B008529B0 /* AstronomyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFA92879779B008529B0 /* AstronomyRowView.swift */; };
 		A835FFAF287978EE008529B0 /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFAE287978EE008529B0 /* DownloadingImageView.swift */; };
 		A835FFB528798FAB008529B0 /* CosmicHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFB428798FAB008529B0 /* CosmicHomeView.swift */; };
-		A835FFB72879915C008529B0 /* AstronomyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A835FFB62879915C008529B0 /* AstronomyGridView.swift */; };
 		A8A898452850B7CF008F0658 /* CosmicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898442850B7CF008F0658 /* CosmicApp.swift */; };
 		A8A898472850B7CF008F0658 /* AstronomyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A898462850B7CF008F0658 /* AstronomyListView.swift */; };
 		A8A898492850B7D1008F0658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A898482850B7D1008F0658 /* Assets.xcassets */; };
@@ -28,12 +27,11 @@
 		A803D89928781EA4000878EA /* AstronomyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyDetailView.swift; sourceTree = "<group>"; };
 		A803D89D2878442E000878EA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A806ED06286C6944001C35F8 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		A835FFA528796E0B008529B0 /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
+		A835FFA528796E0B008529B0 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		A835FFA728797511008529B0 /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		A835FFA92879779B008529B0 /* AstronomyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyRowView.swift; sourceTree = "<group>"; };
 		A835FFAE287978EE008529B0 /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
 		A835FFB428798FAB008529B0 /* CosmicHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicHomeView.swift; sourceTree = "<group>"; };
-		A835FFB62879915C008529B0 /* AstronomyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyGridView.swift; sourceTree = "<group>"; };
 		A8A898412850B7CF008F0658 /* Cosmic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A898442850B7CF008F0658 /* CosmicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicApp.swift; sourceTree = "<group>"; };
 		A8A898462850B7CF008F0658 /* AstronomyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyListView.swift; sourceTree = "<group>"; };
@@ -58,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A806ED06286C6944001C35F8 /* NetworkingManager.swift */,
-				A835FFA528796E0B008529B0 /* PhotoModelCacheManager.swift */,
+				A835FFA528796E0B008529B0 /* ImageCacheManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -71,14 +69,6 @@
 				A803D89928781EA4000878EA /* AstronomyDetailView.swift */,
 			);
 			path = ListScreen;
-			sourceTree = "<group>";
-		};
-		A835FFAC28797843008529B0 /* GridScreen */ = {
-			isa = PBXGroup;
-			children = (
-				A835FFB62879915C008529B0 /* AstronomyGridView.swift */,
-			);
-			path = GridScreen;
 			sourceTree = "<group>";
 		};
 		A835FFAD28797851008529B0 /* Components */ = {
@@ -141,7 +131,6 @@
 			children = (
 				A835FFB428798FAB008529B0 /* CosmicHomeView.swift */,
 				A835FFAB28797817008529B0 /* ListScreen */,
-				A835FFAC28797843008529B0 /* GridScreen */,
 				A835FFAD28797851008529B0 /* Components */,
 			);
 			path = View;
@@ -235,9 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A898472850B7CF008F0658 /* AstronomyListView.swift in Sources */,
-				A835FFB72879915C008529B0 /* AstronomyGridView.swift in Sources */,
 				A835FFAF287978EE008529B0 /* DownloadingImageView.swift in Sources */,
-				A835FFA628796E0B008529B0 /* PhotoModelCacheManager.swift in Sources */,
+				A835FFA628796E0B008529B0 /* ImageCacheManager.swift in Sources */,
 				A835FFA828797511008529B0 /* ImageLoadingViewModel.swift in Sources */,
 				A803D89A28781EA4000878EA /* AstronomyDetailView.swift in Sources */,
 				A835FFB528798FAB008529B0 /* CosmicHomeView.swift in Sources */,

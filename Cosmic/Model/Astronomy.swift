@@ -15,19 +15,17 @@ import Foundation
 //    let url: String?
 //}
 
-
 struct Astronomy: Identifiable, Codable, Equatable {
     let id = UUID().uuidString
     let date: String
     let title: String
-    let description: String
+    let explanation: String
     let photoURL: String
     var isFavorite: Bool = false
     let copyright: String?
     
     enum CodingKeys: String, CodingKey {
-        case date, title, copyright
-        case description = "explanation"
+        case date, title, copyright, explanation
         case photoURL = "url"
     }
 }

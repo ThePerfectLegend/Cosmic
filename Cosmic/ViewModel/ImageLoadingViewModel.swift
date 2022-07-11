@@ -14,7 +14,7 @@ class ImageLoadingViewModel: ObservableObject {
     @Published var isLoading = false
     
     private let networkManager = NetworkManager.instance
-    private let manager = PhotoModelCacheManager.instance
+    private let cacheManager = ImageCacheManager.instance
     
     let urlString: String
     
@@ -24,7 +24,7 @@ class ImageLoadingViewModel: ObservableObject {
     }
     
     func getImage() {
-        if let cachedImage = manager.get(key: urlString) {
+        if let cachedImage = cacheManager.get(key: urlString) {
             image = cachedImage
             print("Getting Image from Cache")
         } else {
@@ -36,26 +36,20 @@ class ImageLoadingViewModel: ObservableObject {
     }
     
     func downloadImage() async throws {
-        
         await MainActor.run {
             isLoading = true
         }
-
         guard let url = URL(string: urlString) else { throw URLError(.badURL) }
-        
         guard let fethedData = try? await networkManager.download(url: url) else {
                    throw URLError(.badServerResponse)
                }
-        
         guard let image = UIImage(data: fethedData) else {
             throw URLError(.cannotCreateFile)
         }
-        
         await MainActor.run {
             self.image = image
             isLoading = false
         }
-        
-        manager.add(key: self.urlString, value: image)
+        cacheManager.add(key: self.urlString, value: image)
     }
 }

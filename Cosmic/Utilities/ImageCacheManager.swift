@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-class PhotoModelCacheManager {
+class ImageCacheManager {
     
-    static let instance = PhotoModelCacheManager()
+    static let instance = ImageCacheManager()
     
     private init() { }
     
